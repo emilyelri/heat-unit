@@ -1,0 +1,343 @@
+.outer {
+  border-bottom: 4px solid yellowgreen;
+  box-shadow: 0px 0 5px 5px maroon;
+  margin: -10px 0px 30px;
+  background-image: linear-gradient(to bottom right, maroon, black);
+}
+.outer .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: -10px 0px 0px;
+  text-align: center;
+  background-color: #0f0f0f;
+  border-bottom: 4px solid yellow;
+  background-image: linear-gradient(to bottom right, red, darkred);
+}
+.outer .header .hamburger {
+  background: none;
+  align-self: flex-start;
+  text-align: left;
+  width: 250px;
+}
+.outer .header .main-title {
+  justify-self: center;
+  background: none;
+  border-bottom: none;
+  border-radius: 20px;
+}
+.outer .header .main-title .title-font {
+  text-decoration: none;
+  background: none;
+  font-size: 2.8rem;
+  padding: 0 70px;
+  font-family: 'Trade Winds', 'Verdana';
+}
+.outer .header .buttons {
+  background: none;
+  width: 250px;
+  margin-top: 5px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-self: flex-start;
+}
+.outer .header .buttons .logged-out-buttons {
+  display: flex;
+  flex-direction: column;
+}
+.outer .header .buttons .logged-out-buttons .reminder {
+  margin-top: 10px;
+  padding: 2px 5px;
+  background-color: white;
+  border: 2px solid yellow;
+  border-radius: 5px;
+}
+.outer .header .buttons .logged-out-buttons .reminder p {
+  color: #0f0f0f;
+  font-size: 0.6rem;
+}
+.outer .header .buttons .logged-out-buttons .reminder p:before {
+  display: inline;
+  content: "⚠ ";
+}
+.outer .header .buttons .button {
+  width: 90px;
+  padding: 5px;
+  margin-right: 5px;
+  background-color: yellowgreen;
+  color: black;
+  border: 2px solid yellow;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+.outer .header .buttons .button:hover {
+  transition: 0.2s ease-in-out;
+  color: maroon;
+  background-color: yellow;
+}
+.outer .header .buttons .logout {
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin-right: 0;
+}
+.console {
+  background-color: yellowgreen;
+  background-image: linear-gradient(to bottom left, yellow, green);
+  border: 3px solid green;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: auto;
+  margin: auto;
+}
+.console .map {
+  border: 3px solid #0f0f0f;
+  background-color: #0f0f0f;
+  border-radius: 5px;
+  width: 1120px;
+  height: 450px;
+  margin: 5px auto;
+}
+.console .interface {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: auto;
+  padding: 10px 0;
+  background-color: whitesmoke;
+}
+.console .interface .chat {
+  border: 1px solid #0f0f0f;
+  background-color: white;
+  color: #0f0f0f;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  font-size: 0.8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 43%;
+  height: 160px;
+  overflow: hidden;
+  padding: 0 0 5px 10px;
+  box-shadow: 2px 3px silver inset;
+}
+.console .interface .chat .messages {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-x: auto;
+}
+.console .interface .chat .messages .chats {
+  color: #0f0f0f;
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+}
+.console .interface .chat .messages .chats .time {
+  color: grey;
+  font-size: 0.6rem;
+}
+.console .interface .chat .enter {
+  font-size: 0.6rem;
+  color: #0f0f0f;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.console .interface .chat .enter .spacer {
+  width: 5px;
+}
+.console .interface .controls {
+  background: none;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.console .interface .controls .actions {
+  display: flex;
+  background: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.console .interface .controls .actions .action {
+  width: 110px;
+  height: 70px;
+  margin: auto;
+  background-color: maroon;
+  background-image: linear-gradient(to bottom right, red, darkred);
+  border: 2px solid darkgoldenrod;
+  border-radius: 10px;
+  font-family: 'Trade Winds', 'Verdana';
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.02s ease-in-out;
+}
+.console .interface .controls .actions .action:hover {
+  transition: 0.2s ease-in-out;
+  font-size: 1.8rem;
+  color: maroon;
+}
+.console .interface .controls .actions .action:active {
+  box-shadow: inset 4px 0 4px 4px maroon;
+  font-size: 1.6rem;
+}
+.console .interface .controls .arrows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  align-self: flex-end;
+}
+.console .interface .controls .arrows .arrow {
+  margin: 2px;
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: maroon;
+  background-image: linear-gradient(to bottom right, red, darkred);
+  border: 2px solid darkgoldenrod;
+  border-radius: 5px;
+  transition: 0.02s ease-in-out;
+}
+.console .interface .controls .arrows .arrow:hover {
+  transition: 0.2s ease-in-out;
+  font-size: 1.55rem;
+  color: maroon;
+}
+.console .interface .controls .arrows .arrow:active {
+  box-shadow: inset 4px 0 4px 4px maroon;
+  font-size: 1.5rem;
+}
+.console .interface .controls .arrows .arrows-bottom {
+  display: flex;
+  flex-direction: row;
+}
+.console .interface .score {
+  border: 1px solid #0f0f0f;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 20%;
+  background-image: linear-gradient(to top, white, yellow, orange, red, darkred);
+}
+.console .interface .score .loc {
+  font-size: 0.7rem;
+  text-align: center;
+}
+.console .interface .score .loc .rm {
+  font-size: 0.8rem;
+}
+.console .interface .score h2 {
+  color: white;
+  margin-top: -10px;
+  margin-bottom: -8px;
+  font-size: 1.6rem;
+  padding-left: 10px;
+}
+.console .interface .score h3 {
+  font-size: 1.4rem;
+  color: black;
+}
+.login {
+  height: auto;
+  width: 40%;
+  max-width: 800px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom left, yellow, green);
+  border: 3px solid green;
+  border-radius: 5px;
+  box-shadow: black 1px 1px 0px 1px;
+}
+.login h2 {
+  font-size: 1.4rem;
+  background: none;
+}
+.login .loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  background: none;
+}
+.login .loginForm TextField {
+  color: #0f0f0f;
+  margin: 5px;
+}
+.login .loginForm .button {
+  width: 130px;
+  padding: 5px;
+  margin: 10px;
+  background-color: maroon;
+  background-image: linear-gradient(to bottom right, red, darkred);
+  border: 2px solid goldenrod;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+.login .loginForm .button:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(1.02);
+}
+.login span {
+  background: none;
+  font-size: 0.8rem;
+  color: white;
+}
+.error::before {
+  display: inline;
+  content: "⚠ ";
+}
+.somethingWentWrong {
+  height: auto;
+  width: 40%;
+  max-width: 800px;
+  margin: -80px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: maroon;
+  background-image: linear-gradient(to bottom right, red, darkred);
+  color: white;
+  border: 3px solid white;
+  border-radius: 5px;
+  box-shadow: black 1px 1px 0px 1px;
+}
+.somethingWentWrong p {
+  font-size: 0.8rem;
+}
+* {
+  color: white;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-image: url(https://thumbs.dreamstime.com/b/chilli-background-vector-seamless-pattern-endless-texture-can-be-used-wallpaper-printing-fabric-paper-scrapbooking-85543092.jpg);
+  background-repeat: repeat;
+  background-size: 20%;
+}
+.App {
+  width: 100%;
+}
